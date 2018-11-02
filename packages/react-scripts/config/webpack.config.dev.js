@@ -257,6 +257,7 @@ module.exports = {
                   require.resolve('@babel/plugin-proposal-decorators'),
                   { legacy: true },
                 ],
+                ["@babel/plugin-proposal-class-properties", { "loose" : true }],
                 [
                   require.resolve('babel-plugin-named-asset-import'),
                   {
