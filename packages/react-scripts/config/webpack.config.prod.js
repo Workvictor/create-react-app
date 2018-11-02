@@ -330,6 +330,10 @@ module.exports = {
               // @remove-on-eject-end
               plugins: [
                 [
+                  require.resolve('@babel/plugin-proposal-decorators'),
+                  { legacy: true },
+                ],
+                [
                   require.resolve('babel-plugin-named-asset-import'),
                   {
                     loaderMap: {
@@ -554,7 +558,6 @@ module.exports = {
         },
         reportFiles: [
           '**',
-          '!**/*.json',
           '!**/__tests__/**',
           '!**/?(*.)(spec|test).*',
           '!src/setupProxy.js',
