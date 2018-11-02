@@ -97,8 +97,8 @@ module.exports = function(
   appPackage.scripts = {
     start: 'react-scripts start',
     build: 'react-scripts build',
-    test: 'react-scripts test',
-    eject: 'react-scripts eject',
+    // test: 'react-scripts test',
+    // eject: 'react-scripts eject',
   };
 
   // Setup the eslint config
