@@ -253,8 +253,6 @@ module.exports = {
               ]),
               // @remove-on-eject-end
               plugins: [
-                ['@babel/plugin-proposal-decorators', { legacy: true }],
-                ['@babel/plugin-proposal-class-properties', { "loose" : true }],
                 [
                   require.resolve('babel-plugin-named-asset-import'),
                   {
@@ -265,6 +263,8 @@ module.exports = {
                     },
                   },
                 ],
+                ['@babel/plugin-proposal-class-properties', { "loose" : true }],
+                ['@babel/plugin-proposal-decorators', { legacy: true }],
               ],
               // This is a feature of `babel-loader` for webpack (not Babel itself).
               // It enables caching results in ./node_modules/.cache/babel-loader/
