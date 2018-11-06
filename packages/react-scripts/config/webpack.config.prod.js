@@ -329,6 +329,8 @@ module.exports = {
               ]),
               // @remove-on-eject-end
               plugins: [
+                ['@babel/plugin-proposal-decorators', { legacy: true }],
+                ['@babel/plugin-proposal-class-properties', { "loose" : true }],
                 [
                   require.resolve('babel-plugin-named-asset-import'),
                   {
@@ -339,8 +341,6 @@ module.exports = {
                     },
                   },
                 ],
-                ['@babel/plugin-proposal-decorators', { legacy: true }],
-                ['@babel/plugin-proposal-class-properties', { "loose" : true }],
               ],
               cacheDirectory: true,
               // Save disk space when time isn't as important
